@@ -191,13 +191,7 @@ window.handleContactSubmit = function (e) {
   };
 
   // Send via EmailJS (Service ID, Template ID, Params)
-
-  emailjs.send(
-  'service_lcvnn9x',
-  'template_kas2b6e',
-  templateParams,
-  'CloPjQkBQ8mBbEEt-'   // 🔥 add public key here
-)
+  emailjs.send('service_lcvnn9x', 'template_kas2b6e', templateParams)
     .then(() => {
       // Fade form to invisible
       form.style.transition = 'opacity 0.35s ease';
